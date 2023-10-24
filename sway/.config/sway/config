@@ -3,7 +3,7 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
-
+exec wal -R
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -173,8 +173,10 @@ include /$Home/.cache/wal/colors-sway
     # Move focus to the parent container
     bindsym $mod+a focus parent
 #
-# Multimedia
-
+# Screenies
+   bindsym  $mod+PRINT exec "grimshot save screen"
+   bindsym  $mod+Shift+PRINT exec "grimshot save area"
+   bindsym  $mod+Ctrl+PRINT exec "grimshot save window"
 
 # Brightness
    bindsym XF86MonBrightnessDown exec "brightnessctl -n set 5%-"
