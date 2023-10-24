@@ -22,10 +22,23 @@ Used it from 2001-2004 before Judd Vinet left. Constant updates, changes, crashe
 
 It's good. But too much work. Once flake has stabilized and matured I may look at it again.
 
+```
+{ inherit I use NixOS btw; }:
+{
+  Flaky flakes;
+};
+```
+
 
 ## Dotfiles
 
 Manage them with stow. What else. You can look at them if you want to.
+
+This what that looks like
+
+![tree](tree.png)
+
+Here is more [information](https://duckduckgo.org)
 
 
 ## Setup
