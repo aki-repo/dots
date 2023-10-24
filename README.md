@@ -7,7 +7,7 @@ This is my workbox. Hence I need reliability, security, reproducibility and inte
 
 Installed on btrfs with snapper so I can boot into a **previously working setup** if ever needed.
 
-This what 'lsblk' looks like:
+This what `lsblk` looks like:
 
 ![snapper](snapper.png)
 
