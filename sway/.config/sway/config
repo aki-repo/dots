@@ -68,8 +68,8 @@ smart_gaps on
 gaps inner 10
 gaps outer 10
 # pywal
-include "$Home/.cache/wal/colors-sway"
-client.focused $color0 $background $foreground $color7 $background
+include /$Home/.cache/wal/colors-sway
+# client.focused $color0 $background $foreground $color7 $background
 
 ### Key bindings
 #
@@ -238,4 +238,4 @@ bindsym $mod+r mode "resize"
 
 # exec eww-wayland -c $HOME/.config/eww-sway open bar
 
-include /etc/sway/config.d/*
+exec pkill waybar && waybar
