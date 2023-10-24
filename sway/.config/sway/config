@@ -37,10 +37,10 @@ output * bg /home/aki/walls/Pages.png fill
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylock -f -c 000000'
+ exec swayidle -w \
+          timeout 300 'swaylock -f -c 000000' \
+          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+          before-sleep 'swaylock -f -c 000000'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -179,7 +179,9 @@ include /$Home/.cache/wal/colors-sway
 # Brightness
    bindsym XF86MonBrightnessDown exec "brightnessctl -n set 5%-"
    bindsym XF86MonBrightnessUp   exec "brightnessctl set +5%"
-
+   bindsym XF86AudioRaiseVolume exec "pamixer -i 5"
+   bindsym XF86AudioLowerVolume exec "pamixer -d 5"
+   bindsym XF86AudioMute exec "pamixer -t"
 
 
 # Scratchpad:
@@ -238,4 +240,4 @@ bindsym $mod+r mode "resize"
 
 # exec eww-wayland -c $HOME/.config/eww-sway open bar
 
-exec pkill waybar && waybar
+exec waybar
