@@ -1,6 +1,6 @@
 # Debian 12 Setup
 
-This is my workbox. Hence I need reliability, security, reproducibility and interoperability.  Therefore Debian.
+This is my workbox. Hence I need reliability, security, reproducibility and interoperability.  Therefore [Debian](https://debian.org).
 
 
 ## Reliable, but you never know
