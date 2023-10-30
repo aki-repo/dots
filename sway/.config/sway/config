@@ -3,7 +3,6 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
-exec wal -R
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -25,7 +24,7 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/aki/walls/Pages.png fill
+output * bg /home/aki/w/coffee.png fill
 #
 # Example configuration:
 #
@@ -68,7 +67,7 @@ smart_gaps on
 gaps inner 10
 gaps outer 10
 # pywal
-include /$Home/.cache/wal/colors-sway
+# include /$Home/.cache/wal/colors-sway
 # client.focused $color0 $background $foreground $color7 $background
 
 ### Key bindings
@@ -242,4 +241,4 @@ bindsym $mod+r mode "resize"
 
 # exec eww-wayland -c $HOME/.config/eww-sway open bar
 
-exec waybar
+exec waybar -c /home/aki/.config/waybar-sway/config
