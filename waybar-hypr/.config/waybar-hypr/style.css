@@ -1,5 +1,4 @@
-@import "gruvbox.css";
-
+@import url("../../.cache/wal/colors-waybar.css");
 * {
     font-family: 'Recursive Sans Casual Static', 'Symbols Nerd Font', 'Recursive Mono Casual Static';
     font-size: 14px;
