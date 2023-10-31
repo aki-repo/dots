@@ -1,19 +1,17 @@
-@import url("../../.cache/wal/colors-waybar.css");
+@import url("/home/aki/.cache/wal/colors-waybar.css");]
+
 * {
     font-family: 'Recursive Sans Casual Static', 'Symbols Nerd Font', 'Recursive Mono Casual Static';
     font-size: 14px;
-}
+    border: none;
+    border-radius: 0;
+    color: @foreground;
 
-#battery {
-    background-color: @blue;
-    color: black;
 }
 
 window#waybar {
-    background-color: rgba(30, 30, 46, 0.2);
-    color: @text;
-    transition-property: background-color;
-    transition-duration: .5s;
+    background: @backgroundAlpha;
+    border-bottom: .1rem solid @color0Alpha;
 }
 
 window#waybar.hidden {
@@ -27,7 +25,7 @@ button {
 }
 
 button:hover {
-    background: @overlay0;
+    background: @color0;
     box-shadow: inset 0 -3px @overlay0;
 }
 
@@ -38,16 +36,21 @@ button:hover {
 }
 
 #workspaces button:hover {
-    background: rgba(108, 112, 134, 0.2);
+    background: @background;
 }
 
 #workspaces button.active {
-    background-color: @base;
+    background-color: @background;
     box-shadow: inset 0 -3px @blue;
 }
 
 #workspaces button.urgent {
-    background-color: @red;
+    background-color: @color6;
+}
+
+#battery {
+    background-color: @color8;
+    color: black;
 }
 
 tooltip {
@@ -65,7 +68,7 @@ tooltip {
 #tray {
     min-width: 100px;
     padding: 0 10px;
-    color: @base;
+    color: @background;
     border-radius: 0;
 }
 
@@ -86,36 +89,36 @@ tooltip {
 
 #clock {
     color: @base;
-    background-color: @magenta;
+    background-color: @color9;
 }
 
 #cpu {
     color: @base;
-    background-color: @blue;
+    background-color: @color10;
 }
 
 #memory {
     color: black;
-    background-color: @lightblue;
+    background-color: @color11;
 }
 
 #network {
     color: @base;
-    background-color: @green;
+    background-color: @color12;
 }
 
 #network.disconnected {
-    background-color: @subtext1;
+    background-color: @color15;
 }
 
 #pulseaudio {
     color: @base;
-    background-color: @text;
+    background-color: @color13;
 }
 
 #pulseaudio.muted {
-    background-color: @subtext1;
-    color: @base;
+    background-color: @background;
+    color: @color5;
 }
 
 #custom-media.custom-spotify {
@@ -123,8 +126,8 @@ tooltip {
 }
 
 #tray {
-    color: @base;
-    background-color: @base;
+    color: @color14;
+    background-color: @background;
 }
 
 #tray > .passive {
@@ -133,6 +136,6 @@ tooltip {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: @red;
+    background-color: @background;
 }
 
