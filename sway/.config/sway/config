@@ -63,8 +63,8 @@ output * bg /home/aki/w/coffee.png fill
 default_border none
 default_floating_border none
 # opacity set 0.9
-smart_gaps on
-gaps inner 10
+# smart_gaps on
+gaps inner 20
 gaps outer 10
 # pywal
 # include /$Home/.cache/wal/colors-sway
@@ -241,4 +241,4 @@ bindsym $mod+r mode "resize"
 
 # exec eww-wayland -c $HOME/.config/eww-sway open bar
 
-exec waybar -c /home/aki/.config/waybar-sway/config
+exec waybar -c /home/aki/.config/waybar/config
