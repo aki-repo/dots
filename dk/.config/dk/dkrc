@@ -157,9 +157,9 @@ fi
 	dkcmd rule class="^urxvt$" ws=3 focus=true
 
 	#dkcmd rule class="^urxvt$" title="cmus" ws=5 float=true w=1200 h=800 x=2590 y=50
-	dkcmd rule class="^urxvt$" title="cava" ws=5 float=true w=400 h=200 x=800 y=300
+	dkcmd rule class="^urxvt$" title="cava" ws=5 float=true w=1000 h=200 x=500 y=200
 	#dkcmd rule class="^pavucontrol$" ws=5 float=true w=1280 h=960
-	dkcmd rule class="^urxvt$" title="ncmpcpp" ws=5 float=true w=400 h=200 x=2390 y=650
+	dkcmd rule class="^urxvt$" title="ncmpcpp" ws=5 float=true w=1000 h=300 x=500 y=450
 
 	# dkcmd rule title="$thinkorswim$" ws=6 float=true w=3000 h=1800 x=150 y=50
 
