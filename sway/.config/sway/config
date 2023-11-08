@@ -1,3 +1,14 @@
+### SwayFX ##
+blur enable
+blur_xray disable
+
+corner_radius 5
+
+shadows enable
+
+default_dim_inactive 0.3
+
+
 # Read `man 5 sway` for a complete reference.
 ### Variables
 #
@@ -9,11 +20,12 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term foot
+set $term alacritty
+
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi --show drun
+set $menu rofi -show drun
 
 include /etc/sway/config-vars.d/*
 
